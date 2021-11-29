@@ -1,0 +1,26 @@
+.container{
+    padding: 20px 40px;
+}
+.section{
+    display: flex;
+}
+.img{
+    background-color: grey;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.cast{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card{
+    border: 2px solid rgb(219, 216, 216);
+    border-radius: 16px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(248, 247, 247);
+}
+.rec{
+    display: flex;
+    flex-wrap: nowrap;
+}
