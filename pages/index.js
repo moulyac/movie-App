@@ -27,7 +27,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <div className={styles.flex}>
-        <Link href='/'><h1 className={styles.title}>All about Movies</h1></Link>
+        <Link href='/'><a><h1 className={styles.title}>All about Movies</h1></a></Link>
         <Search outcome={HandleSearchResult}/>
       </div>
       <Layout data={searchResult} find={detailsId}/>

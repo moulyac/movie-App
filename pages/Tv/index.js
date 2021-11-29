@@ -80,7 +80,7 @@ console.log('hello tv',tvDetails, recommendations, personDetails)
     }
     
     return<div className={styles.container}>
-        <Link href='/'><h3 style={{margin:'0'}}>Home</h3></Link>
+        <Link href='/'><a><h3 style={{margin:'0'}}>Home</h3></a></Link>
         <div className={styles.section}> 
             <img src={`https://image.tmdb.org/t/p/w300${tvDetails.poster_path}`} style={{margin:'20px', borderRadius:'16px'}}/>
             <div>
