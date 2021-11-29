@@ -3,40 +3,12 @@ import { useEffect, useState } from 'react';
 import Link  from 'next/link'
 import styles from './Details.module.css'
 
-// export async function getStaticSideProps({query}) {
-
-//     const id = query.id
-
-//     const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=df6167efabe1eb710c0a0dbe3e6b8f48`)
-//     const details = await res.json()
-
-//     const rec = await fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=df6167efabe1eb710c0a0dbe3e6b8f48`)
-
-//     const recommendations = await rec.json()
-
-//     const per = await fetch(`https://api.themoviedb.org/3/movie/${details.id}/credits?api_key=df6167efabe1eb710c0a0dbe3e6b8f48`)
-//     const personDetails = await per.json()
-
-//     if (!data) {
-//       return {
-//         redirect: {
-//           destination: '/',
-//           permanent: false,
-//         },
-//       }
-//     }
-//     return {
-//         props: { details,recommendations, personDetails }, // will be passed to the page component as props
-//       }
-// }
-
 export default function Details (){
     const router = useRouter()
     const [details, setDetails] = useState([])
     const [personDetails, setPersonDetails] = useState([])
     const [recommendations, setrecommendations] = useState([])
     const {id} = router.query
-    // console.log('hellomov',details, recommendations, personDetails)
 
     const movieDetails=(id)=>{
         router.push({
@@ -81,7 +53,6 @@ export default function Details (){
             <p>{person.character}</p>
         </>
     }
-    console.log(details)
     return<div className={styles.container}> 
         <Link href='/'><a><h3 style={{margin:'0'}}>Home</h3></a></Link>
 

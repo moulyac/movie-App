@@ -31,8 +31,7 @@ export default function Layout({data}){
             data.map((pop,i)=>{
                 return<div className={styles.card} key={i}>
                     <a onClick={()=>detailsId(pop)}>
-                    {/* <button onClick={()=>find(pop.id)}> */}
-                    <img src={`https://image.tmdb.org/t/p/w200${pop.poster_path || pop.profile_path}`} onError="this.style.opacity='0'"  className={styles.imageBorder}/>
+                    <img src={`https://image.tmdb.org/t/p/w200${pop.poster_path || pop.profile_path}`}  className={styles.imageBorder}/>
                     <h5>{ pop.name || pop.original_title || pop.original_name}</h5>
                     <p>{pop.first_air_date || pop.release_date}</p>
                     </a>

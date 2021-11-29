@@ -3,25 +3,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import styles from './Person.module.css'
 
-// export async function getStaticSideProps({query}) {
-//     const id = query.id
-
-//     const res = await fetch(`https://api.themoviedb.org/3/person/${id}?api_key=df6167efabe1eb710c0a0dbe3e6b8f48`)
-//     const data = await res.json()
-  
-//     if (!data) {
-//       return {
-//         redirect: {
-//           destination: '/',
-//           permanent: false,
-//         },
-//       }
-//     }
-//     return {
-//         props: { data }, // will be passed to the page component as props
-//       }
-// }
-
 export default function Actor (){
     const router = useRouter()
     const {id} = router.query
