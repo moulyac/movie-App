@@ -83,7 +83,7 @@ export default function Details (){
     }
     console.log(details)
     return<div className={styles.container}> 
-        <h3 style={{margin:'0'}}>Home</h3>
+        <Link href='/'><a><h3 style={{margin:'0'}}>Home</h3></a></Link>
 
     <div className={styles.section}>
         <img src={`https://image.tmdb.org/t/p/w300${details.poster_path}`} style={{margin:'20px', borderRadius:'16px'}}/>
