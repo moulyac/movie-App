@@ -38,7 +38,7 @@ export default function Actor (){
     
     console.log('person',data)
     return <div className={styles.container}>
-         <Link href='/'><h3 style={{margin:'0'}}>Home</h3></Link>
+        <Link href='/'><a href='/'><h3 style={{margin:'0'}}>Home</h3></a></Link>
         <div className={styles.section}>
             <img src={`https://image.tmdb.org/t/p/w300${data.profile_path}`} style={{margin:'20px', borderRadius:'16px'}}/>
             <div>
